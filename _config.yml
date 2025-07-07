@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lille My
+title: Lille My Design
 email: lillemy@mail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
@@ -27,13 +27,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: lillemy
-github_username:  lillemy
 
 # Build settings
 #theme: minima
 theme: jekyll-theme-portfolyou-aho # using local theme as git submodule
-#remote_theme: aho-opensource/jekyll-portfolYOU-aho
+
+#remote_theme: aho-opensource/jekyll-theme-portfolyou-aho
 
 plugins:
   - jekyll-feed
@@ -44,6 +43,8 @@ plugins:
 # the internal "default list".
 #
 # Excluded items can be processed by explicitly listing the directories or
+#theme: minima
+#theme: minima
 # their entries' file path in the `include:` list.
 #
 # exclude:
@@ -59,3 +60,55 @@ plugins:
 #   - vendor/ruby/
 exclude:
   - themes/
+
+
+################################################################################
+# theme variables
+#
+
+# Opens external URLs in new tab (works for posts, projects and navbar only)
+open_new_tab        : true                    
+
+author:
+  name              : Lille My
+  image             : https://www.creativefabrica.com/wp-content/uploads/2023/05/01/Moomin-Little-My-Graphic-Graphics-68564846-1.jpg
+
+  # social connections. 
+  # you can define your own in _data/social_media.yml, see documentation
+  email             : lillemy50@domain.com
+  github            : lillemy50
+  pinterest         : lillemy50
+  instagram         : lillemy50
+# linkedin          : lillemy50
+# behance           : lillemy50
+# dribbble          : lillemy50
+# gitlab            : lillemy50
+# kaggle            : lillemy50
+# medium            : lillemy50
+# soundcloud        : lillemy50
+# spotify           : lillemy50
+# stackoverflow     : lillemy50
+# twitch            : lillemy50
+# twitter           : lillemy50
+# facebook          : lillemy50
+# vimeo             : lillemy50
+# youtube           : lillemy50
+# keybase           : lillemy50
+
+
+#permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  # defined Collection: "projects"
+  projects:
+    output: true
+    permalink: /projects/:name
+  # etc
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
