@@ -31,8 +31,8 @@ twitter_username: lillemy
 github_username:  lillemy
 
 # Build settings
-theme: minima
-#theme: themes/jekyll-portfolYOU-aho # using local theme as git submodule
+#theme: minima
+theme: jekyll-theme-portfolyou-aho # using local theme as git submodule
 #remote_theme: aho-opensource/jekyll-portfolYOU-aho
 
 plugins:

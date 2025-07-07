@@ -18,6 +18,10 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
+# https://bundler.io/guides/git.html#local-git-repos
+#gem "jekyll-theme-portfolyou-aho", github: 'aho-opensource/jekyll-theme-portfolyou-aho', branch: 'main'
+gem "jekyll-theme-portfolyou-aho", path: "./themes/jekyll-theme-portfolyou-aho"
+ 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
