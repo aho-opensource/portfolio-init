@@ -22,9 +22,8 @@ title: Lille My Design
 email: lillemy@mail.com
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A little designer with big dreams. Determined but curious, fearless but friendly.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -62,6 +61,15 @@ exclude:
   - themes/
 
 
+### Collections ###
+collections:
+  # defined Collection: "projects"
+  projects:
+    output: true
+    permalink: /projects/:name
+  # etc
+
+
 ################################################################################
 # theme variables
 #
@@ -75,7 +83,7 @@ author:
 
   # social connections. 
   # you can define your own in _data/social_media.yml, see documentation
-  email             : lillemy50@domain.com
+  email             : lillemy50@mumindalen.org
   github            : lillemy50
   pinterest         : lillemy50
   instagram         : lillemy50
@@ -95,17 +103,14 @@ author:
 # youtube           : lillemy50
 # keybase           : lillemy50
 
+navbar:
+    items:
+        - about
+        #- blog
+    toggle_theme: false
 
 #permalink: /blog/:title
 
-
-### Collections ###
-collections:
-  # defined Collection: "projects"
-  projects:
-    output: true
-    permalink: /projects/:name
-  # etc
 
 ### Analytics ###
 analytics:
