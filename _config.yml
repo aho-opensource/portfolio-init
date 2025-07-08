@@ -63,7 +63,9 @@ exclude:
 
 ### Collections ###
 collections:
-  # defined Collection: "projects"
+  posts:
+    output: true
+    permalink: /blog/:title
   projects:
     output: true
     permalink: /projects/:name
@@ -73,9 +75,6 @@ collections:
 ################################################################################
 # theme variables
 #
-
-# Opens external URLs in new tab (works for posts, projects and navbar only)
-open_new_tab        : true                    
 
 author:
   name              : Lille My
@@ -103,13 +102,19 @@ author:
 # youtube           : lillemy50
 # keybase           : lillemy50
 
+  # TODO: page:, caption: 
 navbar:
-    items:
-        - about
-        #- blog
     toggle_theme: false
+    items:
+      - page: pages/about.md
+      - page: pages/blog.html
+      - page: pages/tags.html
+        caption: My Tags
+      - page: pages/404.html
+        caption: ":no_entry:"
 
-#permalink: /blog/:title
+# Opens external URLs in new tab (works for posts, projects and navbar only)
+external_new_tab    : true                    
 
 
 ### Analytics ###
