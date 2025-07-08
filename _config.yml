@@ -58,10 +58,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
-  - themes/
+  - themes/ # developmentt submodule folder 
 
 
-### Collections ###
+################################################################################
+# Collections
+
 collections:
   posts:
     output: true
@@ -69,11 +71,34 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+    sort_by: weight 
   # etc
+
+################################################################################
+# default front matters
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
 
 
 ################################################################################
-# theme variables
+# theme settings: jekyll-theme-portfolyou-aho
 #
 
 author:
@@ -102,7 +127,7 @@ author:
 # youtube           : lillemy50
 # keybase           : lillemy50
 
-  # TODO: page:, caption: 
+
 navbar:
     toggle_theme: false
     items:
