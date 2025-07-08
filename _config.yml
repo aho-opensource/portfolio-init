@@ -106,11 +106,11 @@ author:
 navbar:
     toggle_theme: false
     items:
-      - page: pages/about.md
-      - page: pages/blog.html
-      - page: pages/tags.html
+      - page: about.md
+      - page: blog.html
+      - page: blog/tags.html
         caption: My Tags
-      - page: pages/404.html
+      - page: 404.html
         caption: ":no_entry:"
 
 # Opens external URLs in new tab (works for posts, projects and navbar only)
