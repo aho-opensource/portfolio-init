@@ -71,7 +71,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-    sort_by: weight 
+    sort_by: priority 
   # etc
 
 ################################################################################
@@ -82,7 +82,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: page
+      layout: default
   - # blog posts:
     scope:
       path: ""

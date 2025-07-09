@@ -2,4 +2,11 @@
 layout: front
 ---
 
-TODO: Portfolio
+## Movies
+
+{% include projects/listing.html categories="movie" %}
+
+## All
+
+{% include projects/listing.html %}
+
