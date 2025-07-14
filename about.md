@@ -16,10 +16,7 @@ Hi, I am **{{ site.author.name }}** :wave:
 
 Cupcake ipsum dolor sit amet. Carrot cake candy canes cheesecake sugar plum chupa chups pie gummi bears I love toffee. I love icing cheesecake jujubes oat cake. I love dessert donut cotton candy candy I love sweet powder danish. Cheesecake marshmallow bonbon pudding cupcake tiramisu I love I love dessert. Halvah sugar plum apple pie jelly carrot cake.
 
-<div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
-</div>
+## Experience
 
 <div class="row">
 {% include about/timeline.html %}
